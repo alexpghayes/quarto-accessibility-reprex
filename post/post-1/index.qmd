@@ -11,7 +11,7 @@ execute:
   warning: true  
 ---
 
-a number of additional axe-core warnings go off here
+a number of additional axe-core warnings go off here.
 
 ## Section 1
 
