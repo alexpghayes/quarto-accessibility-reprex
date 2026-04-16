@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "post/post-1/index.html",
+    "href": "post/post-1/index.html",
+    "title": "post 1",
+    "section": "",
+    "text": "text &lt;- '&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n&lt;gpx creator=\"StravaGPX Android\" version=\"1.1\" xmlns=\"http://www.topografix.com/GPX/1/1\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd\"&gt;\n'\n\ncat(text)\n\n&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n&lt;gpx creator=\"StravaGPX Android\" version=\"1.1\" xmlns=\"http://www.topografix.com/GPX/1/1\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd\"&gt;"
+  },
+  {
+    "objectID": "post/post-1/index.html#section-1",
+    "href": "post/post-1/index.html#section-1",
+    "title": "post 1",
+    "section": "",
+    "text": "text &lt;- '&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n&lt;gpx creator=\"StravaGPX Android\" version=\"1.1\" xmlns=\"http://www.topografix.com/GPX/1/1\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd\"&gt;\n'\n\ncat(text)\n\n&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n&lt;gpx creator=\"StravaGPX Android\" version=\"1.1\" xmlns=\"http://www.topografix.com/GPX/1/1\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd\"&gt;"
+  },
+  {
+    "objectID": "post/post-1/index.html#section-2",
+    "href": "post/post-1/index.html#section-2",
+    "title": "post 1",
+    "section": "Section 2",
+    "text": "Section 2\n\nlibrary(profvis)\n\nf &lt;- function() {\n  Sys.sleep(0.2)\n  return(1 + 1)\n}\n\nprofvis(f())\n\n\n\n\n\n\nsection 3\n\n\n\n\n\n\nWarningSmall variations in scores will have minimal impact on lottery outcomes\n\n\n\n\n\nIn practice, you probably want scores to be on a multiplicative scale for them to impact lottery outcomes – i.e., if you want a certain entrant to be more likely to win, their score should be orders of magnitude higher than typical scores.\n\n\n\n\n\nsection 4\n\n\n\n\n\n\nWarningLarge scores can lead to unexpected behavior\n\n\n\n\n\nYou will likely also want to enforce that \\(\\frac{s_i^T}{\\sum_{i \\in U} s_i^t} &lt; \\frac{1}{K_t}\\), because otherwise the scores imply that node \\(i\\) should be allocated more than one winning seat. From a pragmatic perspective, all the code still runs fine, but this can have surprising impacts on cumulative unfairness over time, because entrant \\(i\\) can win the lottery and the system will still say they haven’t earned all the winning seats they are entitled, which impacts future lotteries.\n\n\n\n\n\n\n\n\n\nNoteQuotas\n\n\n\n\n\nIt is theoretically possible to require that lottery outcomes satisfy hard quotas on groups (for instance, when you want lottery winners to reflect an underlying population), but this becomes a much more technically challenging problem. The difficulty is that it is NP-hard to find any subset of candidates that even satisfy the quotas, meaning that simple sampling procedures cannot be guaranteed to satisfy the quotas [@flanigan2021a]. Bailey notes that the approach in @flanigan2021a can likely be extended to the repeated lottery setting, but this is far above my pay grade.\n\n\n\n\n\nCode\ng &lt;- function() {\n  Sys.sleep(0.2)\n  return(1 + 1)\n}"
+  },
+  {
+    "objectID": "post/post-1/index.html#appendix",
+    "href": "post/post-1/index.html#appendix",
+    "title": "post 1",
+    "section": "Appendix",
+    "text": "Appendix\n\n\n\nCode\ng &lt;- function() {\n  Sys.sleep(0.2)\n  return(1 + 1)\n}"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "posts",
+    "section": "",
+    "text": "post 1\n\n\n\n\n\n\n\n\n\n\n2 min\n\n\n\n\nNo matching items"
+  }
+]

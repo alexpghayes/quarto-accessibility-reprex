@@ -1,0 +1,77 @@
+---
+title: "post 1"
+categories: [cat1, cat2, cat3]
+title-block-banner: true
+toc: true
+toc-title: Table of contents
+toc-location: left
+execute:
+  echo: true
+  message: true
+  warning: true  
+---
+
+## Section 1
+
+```{r}
+text <- '<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="StravaGPX Android" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+'
+
+cat(text)
+```
+
+
+## Section 2
+
+```{r}
+library(profvis)
+
+f <- function() {
+  Sys.sleep(0.2)
+  return(1 + 1)
+}
+
+profvis(f())
+```
+
+### section 3
+
+::: {.callout-warning collapse="true"}
+## Small variations in scores will have minimal impact on lottery outcomes
+
+In practice, you probably want scores to be on a multiplicative scale for them to impact lottery outcomes -- i.e., if you want a certain entrant to be more likely to win, their score should be orders of magnitude higher than typical scores.
+:::
+
+### section 4
+
+::: {.callout-warning collapse="true"}
+## Large scores can lead to unexpected behavior
+
+You will likely also want to enforce that $\frac{s_i^T}{\sum_{i \in U} s_i^t} < \frac{1}{K_t}$, because otherwise the scores imply that node $i$ should be allocated more than one winning seat. From a pragmatic perspective, all the code still runs fine, but this can have surprising impacts on cumulative unfairness over time, because entrant $i$ can win the lottery and the system will still say they haven't earned all the winning seats they are entitled, which impacts future lotteries.
+:::
+
+::: {.callout-note collapse="true"}
+## Quotas
+
+It is theoretically possible to require that lottery outcomes satisfy hard quotas on groups (for instance, when you want lottery winners to reflect an underlying population), but this becomes a much more technically challenging problem. The difficulty is that it is NP-hard to find any subset of candidates that even satisfy the quotas, meaning that simple sampling procedures cannot be guaranteed to satisfy the quotas [@flanigan2021a]. Bailey notes that the approach in @flanigan2021a can likely be extended to the repeated lottery setting, but this is far above my pay grade.
+:::
+
+
+```{r}
+#| code-fold: true
+g <- function() {
+  Sys.sleep(0.2)
+  return(1 + 1)
+}
+```
+
+## Appendix {.appendix}
+
+```{r}
+#| code-fold: true
+g <- function() {
+  Sys.sleep(0.2)
+  return(1 + 1)
+}
+```

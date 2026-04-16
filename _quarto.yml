@@ -1,0 +1,18 @@
+project:
+  type: website
+
+website:
+  navbar:
+    right:
+      - text: blog
+        file: index.qmd
+
+format:
+  html:
+    linkcolor: black
+    highlight-style: a11y
+
+    # uncomment to fix some but not all axe-core issues
+    # include-after-body: accessibility-fixes.html
+    axe:
+      output: document
